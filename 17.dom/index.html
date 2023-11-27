@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        .box {
+            background-color: aquamarine;
+            padding: 0 50px 50px 0;
+        }
+
+        .invalid-feedback {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title">Introduction to DOM</h1>
+
+        <!-- <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, ipsam suscipit. Excepturi sunt
+            deleniti
+            explicabo, officiis cum suscipit harum optio dolor modi eveniet. Iusto expedita excepturi illum itaque id
+            accusantium impedit, vel, nam animi et ipsam adipisci, iste quos. Consequuntur nemo, blanditiis ullam nihil
+            doloremque voluptatum molestias qui fugiat natus!</p>
+        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, ipsam suscipit. Excepturi sunt
+            deleniti
+            explicabo, officiis cum suscipit harum optio dolor modi eveniet. Iusto expedita excepturi illum itaque id
+            accusantium impedit, vel, nam animi et ipsam adipisci, iste quos. Consequuntur nemo, blanditiis ullam nihil
+            doloremque voluptatum molestias qui fugiat natus!</p> -->
+        <ul class="list-group" id="list">
+            <li id="list-item-one">One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+
+        <button id="btn">Add me</button>
+
+        <div class="box" id="box">
+            <p>( <span id="x-value">0</span>, <span id="y-value">0</span> )</p>
+        </div>
+        <br>
+
+        <!-- lesson 11 & 12 -->
+        <!-- <form action="#">
+            <div>
+                <label for="name">What is your name?</label><br>
+                <input type="text" id="name" placeholder="enter name">
+                <p id="show-name"></p>
+            </div>
+
+            <div>
+                <label>Choose your skill</label>
+                <div>
+                    <input type="checkbox" name="skills" value="C programming" id="gridCheck1">
+                    <label for="gridCheck1">C programming</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="skills" value="Java" id="gridCheck2">
+                    <label for="gridCheck2">Java</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="skills" value="Javascript" id="gridCheck3">
+                    <label for="gridCheck3">Javascript</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="skills" value="Python" id="gridCheck4">
+                    <label for="gridCheck4">Python</label>
+                </div>
+                <div>
+                    <p><strong>Selected Skills: </strong><span id="result"></span></p>
+                </div>
+            </div>
+        </form> -->
+
+        <form action="#" id="form">
+            <p><b>Please fill up the form</b></p>
+            <div>
+                <label for="name">What is your name?</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <div class="invalid-feedback">You must have to provide a Name</div>
+            </div>
+            <br>
+            <div>
+                <label for="email">What is your email?</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+            <br>
+            <div>
+                <label for="password">What is your password?</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your passowrd">
+            </div>
+            <br>
+            <div>
+                <label for="country">Select your country</label><br>
+                <select name="country" id="country">
+                    <option value="Bangladesh" selected>Bangladesh</option>
+                    <option value="India">India</option>
+                    <option value="Srilanka">Srilanka</option>
+                    <option value="Pakistan">Pakistan</option>
+                </select>
+            </div> <br>
+            <input type="submit" value="submit">
+        </form>
+
+    </div>
+
+    <script src="14.form_validation.js"></script>
+</body>
+
+</html>

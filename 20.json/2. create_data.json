@@ -1,0 +1,48 @@
+{
+    "students": [
+        {
+            "name": "MR Masum",
+            "middleName": null,
+            "age": 27,
+            "cgpa": 3.44,
+            "isRegistered": true,
+            "languages": [
+                "Bengali",
+                "English",
+                "Hindi"
+            ],
+            "friends": [
+                {
+                    "name": "shawan",
+                    "age": 28
+                },
+                {
+                    "name": "atik",
+                    "age": 29
+                }
+            ]
+        },
+        {
+            "name": "MS Fareen",
+            "middleName": null,
+            "age": 22,
+            "cgpa": 3.10,
+            "isRegistered": true,
+            "languages": [
+                "Bengali",
+                "English",
+                "Hindi"
+            ],
+            "friends": [
+                {
+                    "name": "neera",
+                    "age": 23
+                },
+                {
+                    "name": "nourin",
+                    "age": 23
+                }
+            ]
+        }
+    ]
+}
